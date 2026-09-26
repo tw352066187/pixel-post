@@ -1,0 +1,51 @@
+:root {
+  --bg: #0a0c14;
+  --panel: #1a1c2c;
+  --panel-2: #243447;
+  --bezel: #3d3f5c;
+  --neon: #41a6f6;
+  --lime: #a7f070;
+  --gold: #ffd541;
+  --coral: #e45a3a;
+  --cream: #f4e4bc;
+  --text: #e8e6f0;
+  --muted: #94b0c2;
+  --pixel: 'Press Start 2P', monospace;
+  --cn: 'ZCOOL KuaiLe', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--cn);
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--coral);
+  color: var(--gold);
+}
